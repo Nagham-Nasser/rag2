@@ -71,7 +71,7 @@ question_answer_chain = create_stuff_documents_chain(llm, prompt_template)
 rag_chain = create_retrieval_chain(retriever, question_answer_chain)
 
 # Streamlit UI
-st.title("PDF Chatbot")
+st.title("El Fayrouz")
 
 # Initialize chat history in session state
 if "chat_history" not in st.session_state:
