@@ -19,7 +19,7 @@ google_api_key = os.getenv("GOOGLE_API_KEY")
 def load_and_process_pdf():
     try:
         # Load and process the PDF
-        loader = PyPDFLoader("yolov9_paper.pdf")
+        loader = PyPDFLoader("Doc1.pdf")
         data = loader.load()
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000)
         docs = text_splitter.split_documents(data)
